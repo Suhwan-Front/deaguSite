@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 
 const NavBase = styled.div`
+  position: fixed;
+  width: 100vw;
   display: flex;
   margin: 15px;
   color: white;
   justify-content: space-evenly;
+`;
+
+const NavLine = styled.hr`
+  width: 70vw;
+  border-bottom: 0px;
+  border-color: #bdbdbd;
 `;
 
 const NavLogo = styled.div`
@@ -56,4 +64,4 @@ const NavListEffect = styled.li`
   }
 `;
 
-export {NavBase, NavLogo, NavList, NavListEffect};
+export {NavBase, NavLogo, NavList, NavListEffect, NavLine};
